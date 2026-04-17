@@ -1,0 +1,20 @@
+<h1>Eventos em Destaque</h1>
+
+<table border="1">
+    <tr>
+        <th>Evento</th>
+        <th>Local</th>
+    </tr>
+
+    {% for e in eventos %}
+    <tr>
+        <td>{{ e.evento }}</td>
+        <td>{{ e.local }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+<br>
+
+<a href="/novo/">Novo Evento</a>
